@@ -1,0 +1,118 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="797.6,1230.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="52">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="24">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="565.6,1165.6" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: UiPath Talent Community Job Search - Jobs" sap:VirtualizedContainerService.HintSize="522.4,1074.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="cf54f3b3-b03d-4359-a02f-b661257c2798" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="510.4,852.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Saved.Values(Of System.Data.DataTable)(&quot;JobsUiPath&quot;)]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Job Role'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Location'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Function'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='mat-expansion-panel' /&gt;&lt;webctrl tag='mat-expansion-panel-header' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='mat-expansion-panel' /&gt;&lt;webctrl tag='mat-expansion-panel-header' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='mat-panel-title' idx='1' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='mat-expansion-panel' /&gt;&lt;webctrl tag='mat-expansion-panel-header' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='mat-panel-description' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='text'&gt;&lt;webctrl tag='mat-expansion-panel' /&gt;&lt;webctrl tag='mat-expansion-panel-header' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='mat-panel-description' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="467.2,156" sap2010:WorkflowViewState.IdRef="NExtractData_1" MaximumResults="0" ScopeIdentifier="cf54f3b3-b03d-4359-a02f-b661257c2798" Version="V1">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://careers.uipath.com/careers/jobs" DesignTimeRectangle="1629, 688, 15, 22" ElementType="Icon" FriendlyName="'PATH'" FullSelectorArgument="&lt;webctrl idx='2' parentid='all-content' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='all-content' tag='path' aaname='' /&gt;" Guid="5b121b06-ae53-4a92-9f62-57d316ca8d54" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAA8AAAAWCAYAAAAfD8YZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADKSURBVDhPnZNJDoUgEEQ5tC69gXov9BZGd+4cFk79U0QJLQrtr+Ql0voKQqJaloX+RSyv6+qhtm0jl2EY2DoEk5umoSzLSGvNPnrDypeYJIlBUmBlHDfPcytLCtixvxY8Xpi0wJPBW8G+7wx1H1yM40hFUQQLXmUQKwjKoO97JgPM8C66c1mWTBTtHBPBoywRgSe7Ypqmhqqq6DgOD+Uupmky4iWFRGDlryKwctu25q+SikCRk67rTEFd1+ckHCYj8zyfT/F4sjxEP611seFVPeIcAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiPath Talent Community Job Search - Jobs' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="246, 474, 1425, 1908" FriendlyName="'Senior Applied'" FullSelectorArgument="&lt;webctrl tag='MAT-ACCORDION' /&gt;" Guid="24caad7c-536a-4069-b11d-fd50c4f57302" InformativeScreenshot="fb307e9661b2efd90d3cc7db6d1f9d65.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiPath Talent Community Job Search - Jobs' /&gt;" SearchSteps="Selector" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="467.2,564.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" WorkbookPath="UiPath Jobs.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="455.2,250.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Sheet1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="412,158.4" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[Saved.Values(Of System.Data.DataTable)(&quot;JobsUiPath&quot;)]" />
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAABCzSURBVGhDvZkJdFRVtoZLiYggEEIgVRkqVRkrQ82Zh6oMZA4higMiQxQQodUItD5bhmAri0EgIQOBMIvoaxERe3otQ3wtaKMout5SetlqQCFIA6kQVIbE+7+9z723UsE40O17Z61/7X32ucO3993n3gpofokx1G+A/wRtQNXTMWG1W8yRu49kWNo+zbZ5zuQl4UxeMj512T3vpie27XbEtj4dHVZbNMq/MnTQQMOAAL1hSN4j1doZ21qNY+47mph/N+LSSqG7bdHREfNebx3snll9Ix2j3OaXHQw9MyyoerctplUFla2Pn6vOZX2V6xR6r6wMD8x5Xgpu/gbhT+yFLdkFc2Q44iKMMIXrYdKHI/yxvdA1fQ3dqq8wfEL9Fk5WufW/Nxj8MUNwzT+yrR1ncp2SAMtx9LUMTmLrG2O9MPFhKXrZPxC85hzCVrYh1GiCIyYaNrMNpqhYREfEICYoEJGOAoRRAsF1HmhX/RPapZ97brGUVyoY/9p4zKAjcLU1GIgr2gsnYm6HpFb6NPmn3XYxP53jRMvU+dA1EtDKdoS2dCP0zqcwyk+DUQGjEWc0whppgFEbBP/Bw2Ac6Y/Y8jkIWdMB3eqzlAgl3HABg9MmVSk4P39wv+5PSjjK1RRiwGusF5QtwZ7OcSjiY5xYT/DB3BJNlMDqfxJMB0ZGORA4cAAm5zqwveYB7G+ejxcWTkd1hQsZcbFwRhqhX3QYuoaLCKk9i9DGi3SNixhkvY4ncVdQ4NRPsqye3ko6BFAvqC+sIrcD7SyXXWp32aQjJaWIqW1H8NqL0DZ2Qld3Hnqa3zQiBOXWcLzb8jg+3tOET1/fhg9fbsT+uscxIdsGXbABESs+g25NJ0LoCYQ0ddET7MLo5Sc8A0aG//Se+HW4tkaFVcHU6jKcbG2ypTVeF/AUa3fbFevAtHm/o8p3EQA9AQLQrj4HfdMFDDU6Ma/UgfmTKzCjOANb5t6FR6j6j95RitnF6QgIMyG8/hx0tedEC4XQuXx+UH0nhk9q3qpg9j/m6bU1vtVVYeTKKr6LIMmeylaA2acYS6yR3ikpgZZ6N5gf/9qvoW3qRBC9WfQtVxHunoTFtydh9tg8PFzmxh8X3Yvl91fiwYpiLL0nF86KmXTOJXoTnREJhFL7aBvofLqetqELP/gU7goaObVdQPm0gzKXQRVAxcrQNk5E9rOskmpXTHsGOqpYMFUuhBLQcQut/grB6y7jgeoleHFOBf5nVz1eX1WNYzuewVvNi/D2pqX4W9PjmDbjcXpylxBMCYRQ23ERtI0MT0nUd2Fw3uxHFeTewRv2WLq5QwASNEMwqG9VZWiCFaCyPan6IgkbTpJllSxqlXT1F2gj0lOgCgZT64TWnUFA4zeYs+oV7KkuwpEdy7BvxUNofmgC1j08EQfX1WDfstmYsGAbAhu/RfBqegK19DaiqnP1+VpsA+b88Q0Fu3ccTo1v61NFBmJfAfK1ws+0SCqsV1ksq7DW5R+LivET4BbivRBcR28UaonotWfx6IOzsGVmLrY/Phnb50zH+ofvx+ZH78aS2ZOgX90OLX0HdPQd4I0vqk/F0NIT5RYK/M3Bowq2POaGBdV4q8jyAe8LyHA+4iSuiX2p2CB6XWoZXlRfEcGEUhuNbr4E69OHsGSimzbwPdg0fToa7r8P9TOKce+8ZzFaqT5/yHRrzovkeROzxHXoraagazQDAwcbnp2T01tNgvqSJBLwAvX6vCasqgyzdLI4Exc2NePy+++iu/0UeATRh4t7l99AfFOG0FL1GSyEnkRE/WmUZaaiaXY53m6pwd41T6J+Zhly5m1H0LqrCF55Snw3dOItxAWQryPeaL4JGB50bHVtrcT7pcne6vUFVIAzLYpU34rTdxQL6P6Gcyu1D0GrHyHxHSD4UJJ+MxA660Xc5krH5PRYTM93YsFdBZhVQr+N3BMRsuIL2uw90NZS+3DC1Ip8nVB+IZANfPLQBwJ+4MjBBscLt8NJmvVMoRfsC6pqX2hZX6hKT5Q8dcvxXVeXgiuPdo+EP3xwBRtaLyN1M2066l1dPfUy2aD1V6Dd0A19wznEVu9EVGIWrMkFeHJyGaoyTJiU7YDDmolwoxUGeyEMD70E/covENJyBTo6T7QPXYv31Eh1Ewe49FW2HeMk+45KOHbchj/dmaoAmiVhM1SZBTT7J8h2blyrIMvj90ev4MGtXyO5phMpiy8Ia1pGG66ZenmzhNCNV2Bc+iFM0xpgcd8Be7wVFnMKwuOyUFZSiYVTK5CWXop4ewmiTelIiHXAFu9EchZx3bUApgVvQL/+ErSbJOjoNTwk91fya9S0JPeo7flxEsNzIlNWFMuwCvSJNIYmqyrdjI66ZQo2V/w7zNwigyct7kQyKYl9ku23nQivPUHVfgHmslmw2zLhSLDBbs2ALSkPVnsOoi1uRCS6EKyPR5Q1Fylj7oMlrRL25EIkZ5QjJaUAqc4spDnp3LGPIG7uK4ha/pH8IeP2sW6vkKyUgP35SthIbBtnZkon0hIkqrQAZv+4Mj9ZWSipbcPwY2u7vMAs56JeiSRuWwKHyQKHJRV2Zw4cKYWwOfNgtmbDQTbWnIVRYYkwJrihj0lDpLUQCSllSLC5YbHnISmlCCnpJUhOp0SSspBhS8GiR1zwH3Kjv2aYM2icbfs4XKvMTRX4yGWWjqcyOCeRCLbHU+Oli394VcDzeGDzRQL1+IjACdrhE3PM+xjWtApYCdZOVXck5VMicvWdSQUwJWQgJM6N1JKZSCqYjkhLMcKM9A0heIezAI7UYjhTi+g8Pj8XLlceTryWiCklw6s0wRMTaq3P0cWFxgnLCVieGystezjbC92WmoC2tAScvK1QQQdeo55n0P4lJ6HKNuPPSLRkC2iGZ9kcMqCVrCnldiRmToAtZxKsromwOOi3EK3ZnYW0yYsInI6z5cBsc+Eva63ofsuEVY+MrtNEPpHeatlWAfO2sZJvEuZt5RLHDxfYIOAVnV+9VMEHylZdgH2hp1cE2md+jSxTdookbPZcAhtDbZRPCRTC7shHrKMcptTbYcm+mzb4ZOr/IiQlFYsEbMnF9PTGwGxxYddKgj8UK3UfMmHX0tBXNXEr89ss28aiP5m3lkv3LMmX2pLjpM9JbSnxuPTeOwL+76d7YCMoFsOp/o+rA5Zpf4LFWUbQYwiKWimpkCo9BnHJlYhNHQ9z1nhY+Alw7yeXUJJUeUogIz0HrzeZCT6a4KOlnkMx+OxlY5smcWuZZNlKwCSzULnwOc4+x14bZxcJfE4JqJv3wMdXYSUgoQWKJTGobH1jvnF6EnOOwVr+W2qhfHoTFYhWsaSOQ3z2RNjcE2DOoEQsOUhKLYXFlov5s9JxYo8J3QejpO6D0cL2HIrC2T8bPRrzlnIkbiFYsj+k/PpifJ5kkj5zxkqCnkbzgUuwELgqFbZPrB9fJKv4lrnHYLn3OZTcORfj75kFS9EM2ItnonJ8KarGp0vblzhxfE8sGLb7YITUczASPQejxFz4ZDUJW0qlRILsqzIkbiaRn7C5VIon1U1Lw2dOkzeBtfu/9cL5yvwj82vX1BhfSx0M2gurKkLWoUheR/ebRnoCZMnXxDUWeeI3l0gJDExin23CplIx53j8phIppbkYH2bG04+0k+JGr75/Geb5HUicf15YBhHW17/Gqscmcswnvp/aUYzuCwKKYbvfNFAiRpoblQTIp5iwsi9imqgVOW0MyYojUC84WVUcZz1RnYlvjxwW9zpFHzAGkiXD9a9r175/7LH2HnFNqfNtAdVDcAzYK73Esd64XmJ9+lJImyb0V47d8Rvp94cCG7+xpI8ft7FYYok4HXfk5RZxMx5VGy8ggQASCEq216/ClZ3K1YDvPnuK4MIJtK8IFt1/DSNoFvnKfF99UKtGOyG+VoaTYUUyypxl2lBECbAtllgTascptwN2v3cF8U+eRzyBCJHPUCL2E1KP2/3eZeVqQM876QQYStVmQLahDM2wYi5bRRRf9dDwOs3w9JAqhhSgG4rBEslsUCXHZMnzw+0fKrcEpm7oQhyBqGKouCfPeUF91/oec57OvaBchdrnzE4VVFEIAQeT2IaiR8R4Tv6bsiqyBo3TDLjFz1/AtRQjtqVQJGESPiVF1lcc42PyX5yKritfixuf7PgOY1Z4YCJoBjf9Rra9/nlvjI9RY2Oe9eAk7SMeXZe/puqnMqwM+t864bPt8bVCwcq6TjIEDZD/WSVsXnKrqaVIAS1C7PpCgqf5ejUmx8VciS15q1ncnAcnMYWqyXDfk5KArybTsXyOOjo/od4XUAynlYT+quOYz1xLSegoQTn+3sbA3j/o/fP11bEEpipmXYHUOy/sExdr6+RYw5HtCoI8XjlyGXnLOxBDkLEk1aqa3NKJV3x6nseuDzeho5XbwwvsoyCC9p3L6iFNLho0VcHXaG4c5OcfVZvriSY4lgBUINnGKOI1tr4xfhLcAr7j2Kke7P3oCur3foOGfd9QYpf6VJxH1+WLWHKoGTtfiyOo0VxlskGKH0SQ7KsaTfPR6H5jlMTiNW/7qCOgPKJGhYppJtjmMVJMcwH5JIpFKfOotWSVebSy7n7+XmnX3/+ioP30+NupD+Defq/k3ugiWAJT9UYgAZK881FCCjxpJCeATf8xdIuC3Tv4KUSszOlQwaLXktgKf0yfOUN757ymzHO2T8KSg80C8MuurxRcCJ9j9e88B+fmSvlcOu/4XnqreMECybJ8/Fb2+6wJ6YNu7P/fREeURdRQhcUNItfmS15wYVXJ88gmXhdPxOtzPKpJFsdUK6/7xvKkx15wEEwAtQODBTCoDNk6QvFZAX0trS2qGlSj4PY/wp5IPapCqFLho5ryFfmuXzv3janH5yOiMU/As+9ozsHx12kzKlACsJUhAygm2+5Wf0nEWkfQnET20xeHfa5g/vDwCxhkMD7r8kQ25kMV39TXMoxscyUVjK2sXLGm6tp5ZGMeal8yEdwIgmUwf+lq63Cas/yV2HCJ7dUDw0SMdfb3wzyGH2qda8fQFG2VsSFXYqk3lUV+A1kWzSPI9h4jr/HcGyfLvu95WeszFaheONkfrgAPR7fXDpXIF3Zc5k3X9x98ASURi/nm/clYn+OF9Mbrc793nCoDHc/nsF56hX4qM5gK2DqMwGUrw95K0EM5KVnkL5xy82IF6/qGf4mhRoCRZAjZslQwwxry6zmpXCHvujJXLWvCpiQB5KueVobtG+s+MEQS8QO3YtHUm3580/7UGJwYWKlfluUhUC+IcU0uwte4Cd4tsa/GjHQMx1k853N858f/izYlwTFYXw0hDab4EFzdf4vUTTr72mDPlCK/6/8v1f6G34hBhtBFqW0CsI7A6xRLcwFJfnidiySveeVdd0lztyXKcAJ0MBhSgMsx2e6/hS3ebRl01BB0w8/bsNczhheH16hgeoIy1LkFqL6WfdmqfnitvMbKbEqj6tPbhUFlWEWDvNDd+2+Wzu4Z6Fk4xe9f6/efO/hpjLwndguDMqSvwlZliwTCarPFGvkivuF39GcgARIwQ8vad7PXP7vnpo6FUwbU+A+5wV+5zf/94ERuTdZW6X7tPMrgAni1yys55kJGYxrD94rB9w2USNi3+qbWh8YPqP5/Be9vcDK82f0rI2pHzTK3Bi9IaeMkQldmSf+5M4Qq7Of5ZIdf28tP+e1eOWtA7eSiG6b+MtAazf8CkOAD3EQv2EkAAAAASUVORK5CYII=" InformativeScreenshot="d5e3d2ce6fc32dd30d772130cfac72e9.png" Selector="&lt;html app='chrome.exe' title='UiPath Talent Community Job Search - Jobs'/&gt;" Url="https://careers.uipath.com/careers/jobs" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>
